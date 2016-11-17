@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+    postgres:
+        image: postgres:9.6
+        environment:
+            - POSTGRES_DB=naive
+            - POSTGRES_USER=naive
+        ports:
+            - 5432:5432
